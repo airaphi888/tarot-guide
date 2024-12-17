@@ -11,6 +11,7 @@
     <meta property="og:description" content="專業的塔羅牌解讀指南，包含完整的塔羅牌意解析">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://你的用戶名.github.io/tarot-guide/">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,6 +24,16 @@
             </ul>
         </nav>
     </header>
+
+    <div class="search-container">
+        <input 
+            type="text" 
+            class="search-input" 
+            placeholder="搜索塔羅牌..." 
+            oninput="searchCards(this.value)"
+        >
+        <div id="search-results" class="card-grid"></div>
+    </div>
 
     <main>
         <section id="major-arcana">
@@ -47,6 +58,14 @@
             <div class="spread">
                 <h3>三張牌陣</h3>
                 <p>過去、現在、未來的基礎牌陣</p>
+            </div>
+        </section>
+
+        <section id="card-reading">
+            <h2>線上抽牌</h2>
+            <div class="reading-container">
+                <button onclick="drawCard()" class="draw-button">抽一張牌</button>
+                <div id="reading-result"></div>
             </div>
         </section>
     </main>
