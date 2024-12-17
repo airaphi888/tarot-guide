@@ -81,4 +81,78 @@ h2 {
     border-bottom: 2px solid #2c3e50;
     padding-bottom: 0.5rem;
     margin-bottom: 2rem;
+}
+
+/* 抽牌區域樣式 */
+.reading-container {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 2rem 0;
+}
+
+.draw-button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.draw-button:hover {
+    background-color: #34495e;
+}
+
+.drawn-card {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.drawn-card img {
+    max-width: 200px;
+    margin: 1rem auto;
+    transition: transform 0.5s;
+}
+
+.drawn-card.reversed img {
+    transform: rotate(180deg);
+}
+
+.position {
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 1rem 0;
+}
+
+.meaning {
+    color: #666;
+    margin: 1rem 0;
+}
+
+.description {
+    font-style: italic;
+    color: #888;
+    margin: 1rem 0;
+}
+
+/* 搜索功能樣式 */
+.search-container {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.search-input {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
 } 
